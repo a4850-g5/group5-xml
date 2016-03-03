@@ -4,7 +4,7 @@ ACIT 4850 lab 07
 ### Group 05 Team Members
 
 * [] Liz     Kundilivskaya 
-* [] Joti    Lalli
+* [JL] Joti    Lalli
 * [KT] Kenneth Tran
 
 ### Base Requirements:
