@@ -3,7 +3,7 @@ ACIT 4850 lab 07
 
 ### Group 05 Team Members
 
-* [] Liz     Kundilivskaya 
+* [LK] Liz     Kundilivskaya 
 * [JL] Joti    Lalli
 * [KT] Kenneth Tran
 
