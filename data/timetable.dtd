@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Timetable placement data
+ACIT 4850 Lab 07
+-->
+
+<!-- The root element, can contain either days, timeslots, courses.  -->
+<!ELEMENT timetable (days|timeslots|courses)+>
+
+<!-- A days element contains timetable data, visualized by day. -->
+<!ELEMENT days (day)*>
+
+<!-- A day element contains timetable data, for a single day -->
+<!ELEMENT day (booking)*>
+<!ATTLIST day which (mon|tue|wed|thur|fri) #REQUIRED>
+
+<!-- A timeslots element contains timetable data, visualized by timeslot -->
+<!ELEMENT timeslots (period)*>
+
+<!ELEMENT period (booking)*>
+
+<!ELEMENT courses (course)*>
+
+<!ELEMENT course (booking)*>
+
+<!-- Each Booking element contains the unique timetable data-->
+<!ELEMENT booking (day?, period?, code?, type, room, instructor)+>
+
+<!-- A period element contains start and end time attributes
+using 24-Hour HH:MM format for time-->
+<!ATTLIST period 
+	start	CDATA	#IMPLIED
+	end		CDATA	#IMPLIED
+>
+
+<!-- A code element contains the Course Code -->
+<!ELEMENT code (#PCDATA)>
+
+<!-- A type element contains the course/booking type -->
+<!ELEMENT type (#PCDATA)>
+
+<!-- A room element contains the location of the booking -->
+<!ELEMENT room (#PCDATA)>
+
+<!-- An instructor element contains the instructor's name -->
+<!ELEMENT instructor (#PCDATA)>
