@@ -15,4 +15,20 @@
 			<instructor>James Perry</instructor>
 		</booking>
 	</course>
+	<course courseCode="ACIT4620">
+		<booking>
+			<day which="tue" />
+			<period start="08:30" end="10:20" />
+			<courseType>Lab</courseType>
+			<room>SE12 - 306</room>
+			<instructor>Bethany Edmunds</instructor>
+		</booking>
+		<booking>
+			<day which="tue" />
+			<period start="15:30" end="17:20" />
+			<courseType>Lecture</courseType>
+			<room>SW3 - 3615</room>
+			<instructor>Bethany Edmunds</instructor>
+		</booking>
+	</course>
 </courses>
