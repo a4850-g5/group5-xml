@@ -14,6 +14,13 @@
 			<room>sw1-2005</room>
 			<instructor>Chau</instructor>
 		</booking>
+		<booking>
+			<period start="16:30" end="17:20"></period>
+			<courseCode>ACIT4650</courseCode>
+			<courseType>lecture</courseType>
+			<room>se6-205</room>
+			<instructor>Elmasry</instructor>
+		</booking>
 	</day>
 </days>
 
