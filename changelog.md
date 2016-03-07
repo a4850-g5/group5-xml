@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-07 14:50 - Added & validated timeslots
 * 2016-03-07 14:45 - Revised picture of Timetable after Reading Break.
 * 2016-03-07 14:40 - reworded some attributes in DTD file.
 * 2016-03-07 13:55 - Initial Master XML File.
