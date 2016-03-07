@@ -1,4 +1,4 @@
-	<timeslots>
+<timeslots>
 	<period start="10:30" end="12:30">
 		<booking>
 			<day which= "mon" > </day>
