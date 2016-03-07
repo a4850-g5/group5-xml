@@ -2,7 +2,7 @@
 	<period start="10:30" end="12:30">
 		<booking>
 			<day which= "mon" > </day>
-			<courseCode>ACIT4650</code>
+			<courseCode>ACIT4650</courseCode>
 			<courseType>lab</courseType>
 			<room>SE12-306</room>
 			<instructor>Elmasry</instructor>
