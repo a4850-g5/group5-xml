@@ -1,0 +1,17 @@
+<timetable>
+<days>
+	<day which="mon">
+		<booking>
+			<period start="10:30" end="12:30"></period>
+			<courseCode>ACIT4650</courseCode>
+			<courseType>lab</courseType>
+			<room>sw12-306</room>
+			<instructor>Elmasry</instructor>
+		</booking>
+	</day>
+	<day which="tue"></day>
+	<day which="wed"></day>
+	<day which="thur"></day>
+	<day which="fri"></day>
+</days>
+</timetable>
