@@ -9,14 +9,14 @@
 		</booking>
 		<booking>
 			<day which= "thur" > </day>
-			<courseCode>ACIT4910</code>
+			<courseCode>ACIT4910</courseCode>
 			<courseType>lab</courseType>
 			<room>SE12-306</room>
 			<instructor>Chau</instructor>
 		</booking>
 		<booking>
 			<day which= "fri" > </day>
-			<courseCode>ACIT4770</code>
+			<courseCode>ACIT4770</courseCode>
 			<courseType>tutorial</courseType>
 			<room>SE12-306</room>
 			<instructor>Lord</instructor>
