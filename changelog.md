@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-07 15:07 - Adjusted days.xml 
 * 2016-03-07 14:55 - Added courses.xml (data sorted by course view)
 * 2016-03-07 14:54 - Revised days xml
 * 2016-03-07 14:45 - Revised picture of Timetable after Reading Break.

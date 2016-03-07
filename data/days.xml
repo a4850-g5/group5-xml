@@ -1,4 +1,3 @@
-<timetable>
 <days>
 	<day which="mon">
 		<booking>
@@ -8,10 +7,13 @@
 			<room>sw12-306</room>
 			<instructor>Elmasry</instructor>
 		</booking>
+		<booking>
+			<period start="15:30" end="16:20"></period>
+			<courseCode>ACIT4910</courseCode>
+			<courseType>lecture</courseType>
+			<room>sw1-2005</room>
+			<instructor>Chau</instructor>
+		</booking>
 	</day>
-	<day which="tue"></day>
-	<day which="wed"></day>
-	<day which="thur"></day>
-	<day which="fri"></day>
 </days>
-</timetable>
+
