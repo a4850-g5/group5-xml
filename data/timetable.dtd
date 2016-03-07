@@ -12,20 +12,24 @@ ACIT 4850 Lab 07
 <!ELEMENT days (day)*>
 
 <!-- A day element contains timetable data, for a single day -->
-<!ELEMENT day (booking)*>
+<!ELEMENT day (booking|EMPTY)*>
 <!ATTLIST day which (mon|tue|wed|thur|fri) #REQUIRED>
 
 <!-- A timeslots element contains timetable data, visualized by timeslot -->
 <!ELEMENT timeslots (period)*>
 
-<!ELEMENT period (booking)*>
+<!-- A period element can contain a booking element, 
+or be used in the timeslot parent element with no child elements.-->
+<!ELEMENT period (booking|EMPTY)*>
 
+<!-- A course element contains one course details (with multiple booking times) -->
 <!ELEMENT courses (course)*>
 
 <!ELEMENT course (booking)*>
+<!ATTLIST course code CDATA #REQUIRED>
 
 <!-- Each Booking element contains the unique timetable data-->
-<!ELEMENT booking (day?, period?, code?, type, room, instructor)+>
+<!ELEMENT booking (day?, period?, code?, courseType, room, instructor)+>
 
 <!-- A period element contains start and end time attributes
 using 24-Hour HH:MM format for time-->
@@ -38,7 +42,7 @@ using 24-Hour HH:MM format for time-->
 <!ELEMENT code (#PCDATA)>
 
 <!-- A type element contains the course/booking type -->
-<!ELEMENT type (#PCDATA)>
+<!ELEMENT courseType (#PCDATA)>
 
 <!-- A room element contains the location of the booking -->
 <!ELEMENT room (#PCDATA)>
