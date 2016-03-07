@@ -26,10 +26,10 @@ or be used in the timeslot parent element with no child elements.-->
 <!ELEMENT courses (course)*>
 
 <!ELEMENT course (booking)*>
-<!ATTLIST course code CDATA #REQUIRED>
+<!ATTLIST course courseCode CDATA #REQUIRED>
 
 <!-- Each Booking element contains the unique timetable data-->
-<!ELEMENT booking (day?, period?, code?, courseType, room, instructor)+>
+<!ELEMENT booking (day?, period?, courseCode?, courseType, room, instructor)+>
 
 <!-- A period element contains start and end time attributes
 using 24-Hour HH:MM format for time-->
@@ -39,7 +39,7 @@ using 24-Hour HH:MM format for time-->
 >
 
 <!-- A code element contains the Course Code -->
-<!ELEMENT code (#PCDATA)>
+<!ELEMENT courseCode (#PCDATA)>
 
 <!-- A type element contains the course/booking type -->
 <!ELEMENT courseType (#PCDATA)>

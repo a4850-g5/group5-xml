@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-07 14:40 - reworded some attributes in DTD file.
 * 2016-03-07 13:55 - Initial Master XML File.
 * 2016-03-07 13:50 - Updated DTD file with additional elements.
 * 2016-03-05 16:05 - Initial DTD file - incomplete
