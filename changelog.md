@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-07 20:23 - Added a days.xml
 * 2016-03-07 15:30 - Added more course details in courses.xml
 * 2016-03-07 14:50 - Added & validated timeslots
 * 2016-03-07 14:55 - Added courses.xml (data sorted by course view)
