@@ -9,27 +9,34 @@ ACIT 4850 Lab 07
 <!ELEMENT timetable (days|timeslots|courses)+>
 
 <!-- A days element contains timetable data, visualized by day. -->
-<!ELEMENT days (day)*>
+<!ELEMENT days (day)+>
 
 <!-- A day element contains timetable data, for a single day -->
 <!ELEMENT day (booking|EMPTY)*>
 <!ATTLIST day which (mon|tue|wed|thur|fri) #REQUIRED>
 
 <!-- A timeslots element contains timetable data, visualized by timeslot -->
-<!ELEMENT timeslots (period)*>
+<!ELEMENT timeslots (period)+>
 
 <!-- A period element can contain a booking element, 
 or be used in the timeslot parent element with no child elements.-->
 <!ELEMENT period (booking|EMPTY)*>
 
 <!-- A course element contains one course details (with multiple booking times) -->
-<!ELEMENT courses (course)*>
+<!ELEMENT courses (course)+>
 
 <!ELEMENT course (booking)*>
 <!ATTLIST course courseCode CDATA #REQUIRED>
 
-<!-- Each Booking element contains the unique timetable data-->
-<!ELEMENT booking (day?, period?, courseCode?, courseType, room, instructor)+>
+<!-- 
+Each Booking element contains the unique timetable data
+The first two child elements will "depend" on what the parent element is.
+The required order of elements for:
+days>day:  period, courseCode, courseType, room, instructor
+timeslots>period:  day, courseCode, courseType, room, instructor
+courses>course:  day, period, courseType, rom, instructor
+-->
+<!ELEMENT booking (((day, period)|(period, courseCode)|(day, courseCode)), courseType, room, instructor)>
 
 <!-- A period element contains start and end time attributes
 using 24-Hour HH:MM format for time-->
