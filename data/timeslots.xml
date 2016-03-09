@@ -1,5 +1,5 @@
 <timeslots>
-	<period start="10:30" end="12:30">
+	<period start="10:30" end="12:20">
 		<booking>
 			<day which= "mon" > </day>
 			<courseCode>ACIT4650</courseCode>

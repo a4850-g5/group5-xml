@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-08 17:26 - Fixed the end time in timeslots.xml
 * 2016-03-07 20:45 - Modified DTD Constraints for more strict validation
 * 2016-03-07 20:23 - Added a days.xml
 * 2016-03-07 15:30 - Added more course details in courses.xml
