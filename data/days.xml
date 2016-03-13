@@ -38,7 +38,7 @@
 			<instructor>Elmasry</instructor>
 		</booking>
 		<booking>
-			<period start="15:30" end="117:20"></period>
+			<period start="15:30" end="17:20"></period>
 			<courseCode>ACIT4620</courseCode>
 			<courseType>lecture</courseType>
 			<room>sw1-2020</room>
