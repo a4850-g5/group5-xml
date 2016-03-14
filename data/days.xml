@@ -22,4 +22,27 @@
 			<instructor>Elmasry</instructor>
 		</booking>
 	</day>
+	<days which="tue">
+		<booking>
+			<period start="8:30" end="10:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lab</courseType>
+			<room>sw12-306</room>
+			<instructor>Edmunds</instructor>
+		</booking>
+		<booking>
+			<period start="12:30" end="13:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lecture</courseType>
+			<room>se6-205</room>
+			<instructor>Elmasry</instructor>
+		</booking>
+		<booking>
+			<period start="15:30" end="17:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lecture</courseType>
+			<room>sw1-2020</room>
+			<instructor>Edmunds</instructor>
+		</booking>
+	</day>
 </days>
