@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-12 21:31 - Adjusted days.xml, instructor full name
 * 2016-03-10 18:12 - Added timetable.php
 * 2016-03-10 14:12 - Adjusted days.xml
 * 2016-03-08 17:26 - Fixed the end time in timeslots.xml
