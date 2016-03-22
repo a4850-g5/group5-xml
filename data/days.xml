@@ -22,7 +22,7 @@
 			<instructor>Medhat Elmasry</instructor>
 		</booking>
 	</day>
-	<days which="tue">
+	<day which="tue">
 		<booking>
 			<period start="8:30" end="10:20"></period>
 			<courseCode>ACIT4620</courseCode>
