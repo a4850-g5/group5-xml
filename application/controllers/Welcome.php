@@ -50,5 +50,4 @@ class Welcome extends MY_Controller {
 		}
 		return $day;
 	}
-
 }
