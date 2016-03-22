@@ -92,6 +92,8 @@ class Booking extends CI_Model {
 
 	public function __construct($record, $parent)
 	{
+		// Set values from the data provided
+		
 		// Additional conversion:  Trim outside whitespaces, and convert to lowercase.
 		$this->day = strtolower(trim((String) (isset($record->day['which']) ? $record->day['which'] : $parent['which'])));
 
