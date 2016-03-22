@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 * 2016-03-22 09:45 - Fixed Schedule CI Model and schedule.xml for dropdown
+* 2016-03-22 09:43 - Adjusted days.xml, edited class location
 * 2016-03-21 22:10 - Added Timetable CI Model
 * 2016-03-21 19:25 - Added Schedule CI Model, schedule xml for dropdown
 * 2016-03-21 19:00 - Initial CodeIgniter Template webpage render system
