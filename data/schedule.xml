@@ -14,14 +14,14 @@ Schedule Control File for the timetables
 	</days>
 	
 	<periods>
-		<period code="08:30">08:30</period>
-		<period code="09:30">09:30</period>
-		<period code="10:30">10:30</period>
-		<period code="11:30">11:30</period>
-		<period code="12:30">12:30</period>
-		<period code="13:30">13:30</period>
-		<period code="14:30">14:30</period>
-		<period code="15:30">15:30</period>
-		<period code="16:30">16:30</period>
+		<period code="08:30">08:30 (8:30 AM)</period>
+		<period code="09:30">09:30 (9:30 AM)</period>
+		<period code="10:30">10:30 (10:30 AM)</period>
+		<period code="11:30">11:30 (11:30 AM)</period>
+		<period code="12:30">12:30 (12:30 PM)</period>
+		<period code="13:30">13:30 (1:30 PM)</period>
+		<period code="14:30">14:30 (2:30 PM)</period>
+		<period code="15:30">15:30 (3:30 PM)</period>
+		<period code="16:30">16:30 (4:30 PM)</period>
 	</periods>
 </schedule>

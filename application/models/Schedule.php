@@ -18,13 +18,25 @@ class Schedule extends CI_Model {
 		
 		// Build list of days (weekdays)
 		foreach ($this->xml->days->day as $day) {
-			$this->days[(string) $day['code']] = (string) $day;
+			// Approach 1 - using Associative Key-Value array pairs
+			//$this->days[(string) $day['code']] = (string) $day;
+			
+			// Approach 2 - using class objects
+			$record = new stdClass();
+			$record->code = (string) $day['code'];
+			$record->name = (string) $day;
+			$this->days[$record->code] = $record;
 		}
 		
 		// Build list of periods
 		foreach ($this->xml->periods->period as $period) {
+			// Approach 1 - using Associative Key-Value array pairs
+			//$this->periods[(string) $period['code']] = (string) $period;
+			
+			// Approach 2 - using class objects
 			$record = new stdClass();
 			$record->code = (string) $period['code'];
+			$record->name = (string) $period;
 			$this->periods[$record->code] = $record;
 		}
 		
