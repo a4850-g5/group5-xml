@@ -1,5 +1,4 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
@@ -8,8 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Default application controller
  *
  */
-class MY_Controller extends CI_Controller
-{
+class MY_Controller extends CI_Controller {
 
 	protected $data = array();   // parameters for view components
 	protected $id;  // identifier for our content
@@ -47,7 +45,6 @@ class MY_Controller extends CI_Controller
 		 * is just the filename WITHOUT the extension
 		 */
 		$this->pageScripts = array();
-
 	}
 
 	/**
