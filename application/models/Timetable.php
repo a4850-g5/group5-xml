@@ -78,6 +78,73 @@ class Timetable extends CI_Model {
 		return $this->timeslots;
 	}
 
+	//--------------------------------------------------
+	//	Search Functions
+	//--------------------------------------------------
+
+	/**
+	 * Search and return an array of booking objects from the courses facet
+	 * based on the search criteria given
+	 */
+	public function searchCourses($searchDay, $searchPeriod)
+	{
+		$result = array();
+
+		foreach ($this->getCourses() as $course)
+		{
+			if ($course->day == $searchDay && $course->periodStart == $searchPeriod)
+			{
+				// This should only be done once.
+				$result[] = $course;
+			}
+		}
+
+		// There should only be one result, but we'll return all matches.
+		return $result;
+	}
+
+	/**
+	 * Search and return an array of booking objects from the days facet
+	 * based on the search criteria given
+	 */
+	public function searchDays($searchDay, $searchPeriod)
+	{
+		$result = array();
+
+		foreach ($this->getDays() as $day)
+		{
+			if ($day->day == $searchDay && $day->periodStart == $searchPeriod)
+			{
+				// This should only be done once.
+				$result[] = $day;
+			}
+		}
+
+		// There should only be one result, but we'll return all matches.
+		return $result;
+	}
+
+	/**
+	 * Search and return an array of booking objects from the timeslots facet
+	 * based on the search criteria given
+	 */
+	public function searchTimeslots($searchDay, $searchPeriod)
+	{
+		$result = array();
+
+		foreach ($this->getTimeslots() as $timeslot)
+		{
+			if ($timeslot->day == $searchDay && $timeslot->periodStart == $searchPeriod)
+			{
+				// This should only be done once.
+				$result[] = $timeslot;
+			}
+		}
+
+		// There should only be one result, but we'll return all matches.
+		return $result;
+	}
+
 }
 
 class Booking extends CI_Model {
@@ -93,7 +160,6 @@ class Booking extends CI_Model {
 	public function __construct($record, $parent)
 	{
 		// Set values from the data provided
-		
 		// Additional conversion:  Trim outside whitespaces, and convert to lowercase.
 		$this->day = strtolower(trim((String) (isset($record->day['which']) ? $record->day['which'] : $parent['which'])));
 
