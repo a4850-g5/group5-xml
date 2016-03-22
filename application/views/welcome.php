@@ -4,13 +4,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <h1>Welcome to CodeIgniter!</h1>
 
 <div id="body">
-	<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+	<form method="post">
+		 <label for="Timeslot">Timeslot: </label>
+		<select  id="Timeslot" name="dropdown_timeslot">
+			{timeslots}
+			<option value="{code}">{period}</option>
+			{/timeslots}
+		</select>
 
-	<p>If you would like to edit this page you'll find it located at:</p>
-	<code>application/views/welcome.php</code>
+		 <br />
+		 
+		 <label for="Day">Day of Week: </label>
+		<select  id="Day" name="dropdown_day">
+			{days}
+			<option value="{code}">{day}</option>
+			{/days}
+		</select>
 
-	<p>The corresponding controller for this page is found at:</p>
-	<code>application/controllers/Welcome.php</code>
+		<br />
+		<br />
+
+		<input type='submit' value='Search'>
+	</form>
 </div>
 
 <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>

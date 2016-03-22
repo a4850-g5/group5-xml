@@ -1,6 +1,9 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-22 11:51 - added Select ID
+* 2016-03-22 11:38 - Created search form
+* 2016-03-22 10:58 - Completed timeslot & day dropdown menu
 * 2016-03-22 10:45 - Page Styles/Script view fragments now work with both local files and hotlinks.
 * 2016-03-22 09:55 - Updated courses.xml to relect all courses taken this term.
 * 2016-03-22 09:45 - Fixed Schedule CI Model and schedule.xml for dropdown
