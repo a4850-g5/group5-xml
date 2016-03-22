@@ -5,8 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="body">
 	<form method="post">
-		 <label id="Timeslot" for="Timeslot">Timeslot: </label>
-		<select name="dropdown_timeslot">
+		 <label for="Timeslot">Timeslot: </label>
+		<select  id="Timeslot" name="dropdown_timeslot">
 			{timeslots}
 			<option value="{code}">{period}</option>
 			{/timeslots}
@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		 <br />
 		 
-		 <label id="Day" for="Day">Day of Week: </label>
-		<select name="dropdown_day">
+		 <label for="Day">Day of Week: </label>
+		<select  id="Day" name="dropdown_day">
 			{days}
 			<option value="{code}">{day}</option>
 			{/days}
