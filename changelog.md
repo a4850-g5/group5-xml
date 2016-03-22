@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-21 19:00 - Initial CodeIgniter Template webpage render system
 * 2016-03-21 18:10 - Adjusted timeslots.xml, instructor full name
 * 2016-03-12 21:31 - Adjusted days.xml, instructor full name
 * 2016-03-10 18:12 - Added timetable.php
