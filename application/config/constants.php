@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// Location of Data Folder
+define('DATAPATH', './data/');
+
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
