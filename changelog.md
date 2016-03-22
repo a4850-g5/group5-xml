@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-21 22:10 - Added Timetable CI Model
 * 2016-03-21 19:25 - Added Schedule CI Model, schedule xml for dropdown
 * 2016-03-21 19:00 - Initial CodeIgniter Template webpage render system
 * 2016-03-21 18:10 - Adjusted timeslots.xml, instructor full name
