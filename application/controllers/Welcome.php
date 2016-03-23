@@ -27,27 +27,4 @@ class Welcome extends MY_Controller {
 		$this->render();
 	}
 
-	private function timeslot_dropdown() {
-		$timeslots = array();
-
-		foreach ($this->schedule->periods() as $periods) {
-			$timeslots[] = array(
-				'code' => $periods->code,
-				'period' => $periods->name
-			);
-		}
-		return $timeslots;
-	}
-
-	private function days_dropdown() {
-		$day = array();
-
-		foreach ($this->schedule->days() as $days) {
-			$day[] = array(
-				'code' => $days->code,
-				'day' => $days->name
-			);
-		}
-		return $day;
-	}
 }
