@@ -94,12 +94,15 @@ class Timetable extends CI_Model {
 		{
 			if ($course->day == $searchDay && $course->periodStart == $searchPeriod)
 			{
-				// This should only be done once.
 				$result[] = $course;
 			}
 		}
 
-		// There should only be one result, but we'll return all matches.
+		if (count($result) == 0)
+		{
+			return null;
+		}
+		// There should only be one matched result, but we'll return all matches.
 		return $result;
 	}
 
@@ -115,12 +118,16 @@ class Timetable extends CI_Model {
 		{
 			if ($day->day == $searchDay && $day->periodStart == $searchPeriod)
 			{
-				// This should only be done once.
 				$result[] = $day;
 			}
 		}
 
-		// There should only be one result, but we'll return all matches.
+		if (count($result) == 0)
+		{
+			return null;
+		}
+
+		// There should only be one matched result, but we'll return all matches.
 		return $result;
 	}
 
@@ -136,12 +143,16 @@ class Timetable extends CI_Model {
 		{
 			if ($timeslot->day == $searchDay && $timeslot->periodStart == $searchPeriod)
 			{
-				// This should only be done once.
 				$result[] = $timeslot;
 			}
 		}
 
-		// There should only be one result, but we'll return all matches.
+		if (count($result) == 0)
+		{
+			return null;
+		}
+
+		// There should only be one matched result, but we'll return all matches.
 		return $result;
 	}
 

@@ -11,6 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="content">
 			{content}
 		</div>
+		{loadScripts}
 	</body>
-	{loadScripts}
 </html>

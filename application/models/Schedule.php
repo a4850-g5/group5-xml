@@ -47,12 +47,12 @@ class Schedule extends CI_Model {
 		return $this->days;
 	}
 	
-	// Retrieve a day record (for code)
+	// Retrieve a day name (for code specified)
 	function getDay($code) {
 		if (isset($this->days[$code])) {
-			return $this->days[$code];
+			return $this->days[$code]->name;
 		} else {
-			return null;
+			return "Unknown Day";
 		}
 	}
 	
@@ -61,12 +61,12 @@ class Schedule extends CI_Model {
 		return $this->periods;
 	}
 	
-	// Retrieve a period record
+	// Retrieve a period name (for code specified)
 	function getPeriod($code) {
 		if (isset($this->periods[$code])) {
-			return $this->periods[$code];
+			return $this->periods[$code]->name;
 		} else {
-			return null;
+			return "Unknown Period";
 		}
 	}
 }

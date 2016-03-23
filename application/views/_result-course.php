@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<h1>Results by Course Number</h1>
-<table id="courseResult">
+<h2>Showing all results from the course facet</h2>
+<table id="courseResult" class="display">
 	<thead>
 		<tr>
 			<th>Course Number</th>
+			<th>Course Type</th>
 			<th>Instructor</th>
 			<th>Room Number</th>
 			<th>Day</th>
-			<th>Course type</th>
 			<th>Period</th>
 		</tr>
 	</thead>
@@ -17,11 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		{coursesFacet}
 		<tr>
 			<td>{courseCode}</td>
-			<td>{instructor}</td>
-			<td>{room}</td>
-			<td>{day}</td>
 			<td>{courseType}</td>
+			<td>{instructor}</td>
+			<td>{day}</td>
 			<td>{periodStart} - {periodEnd}</td>
+			<td>{room}</td>
 		</tr>
 		{/coursesFacet}
 	</tbody>

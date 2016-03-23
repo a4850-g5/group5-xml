@@ -1,12 +1,14 @@
-<table id="resultsTable">
+<table id="searchResult" class="display">
 	<thead>
 		<tr>
-			<th>Info</th>
+			<th></th>
 			<th>Course Code</th>
 			<th>Booking Type</th>
+			<th>Instructor</th>
+			<th>Day of Week</th>
 			<th>Start Time</th>
 			<th>End Time</th>
-			<th>Day of Week</th>
+
 		</tr>
 	</thead>
 	<tbody>
@@ -15,9 +17,11 @@
 			<td>{type}</td>
 			<td>{courseCode}</td>
 			<td>{courseType}</td>
+			<td>{instructor}</td>
+			<td>{day}</td>
 			<td>{periodStart}</td>
 			<td>{periodEnd}</td>
-			<td>{day}</td>
+
 		</tr>{/results}
 	</tbody>
 </table>
