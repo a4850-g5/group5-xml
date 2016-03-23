@@ -6,5 +6,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!-- Load files for CSS Styling -->
 {styles}
-<link href="{appRoot}/assets/css/{filename}.css" rel="stylesheet" type="text/css"/>{/styles}
+<link href="{link}" rel="stylesheet" type="text/css"/>{/styles}
 <!-- End Load files for CSS Styling -->
