@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-22 17:43 - Added views, show function -> data table
 * 2016-03-22 17:00 - Added Search Function
 * 2016-03-22 11:51 - added Select ID
 * 2016-03-22 11:45 - Added individual facet search functions
