@@ -1,6 +1,24 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+* 2016-03-23 14:30 - Combined all components into one Controller, plus simple formatting.
+* 2016-03-22 17:43 - Added views, show function -> data table
+* 2016-03-22 17:00 - Added Search Function
+* 2016-03-22 11:51 - added Select ID
+* 2016-03-22 11:45 - Added individual facet search functions
+* 2016-03-22 11:38 - Created search form
+* 2016-03-22 10:58 - Completed timeslot & day dropdown menu
+* 2016-03-22 10:45 - Page Styles/Script view fragments now work with both local files and hotlinks.
+* 2016-03-22 09:55 - Updated courses.xml to relect all courses taken this term.
+* 2016-03-22 09:45 - Fixed Schedule CI Model and schedule.xml for dropdown
+* 2016-03-22 09:43 - Adjusted days.xml, edited class location
+* 2016-03-21 22:10 - Added Timetable CI Model
+* 2016-03-21 19:25 - Added Schedule CI Model, schedule xml for dropdown
+* 2016-03-21 19:00 - Initial CodeIgniter Template webpage render system
+* 2016-03-21 18:10 - Adjusted timeslots.xml, instructor full name
+* 2016-03-12 21:31 - Adjusted days.xml, instructor full name
+* 2016-03-10 18:12 - Added timetable.php
+* 2016-03-10 14:12 - Adjusted days.xml
 * 2016-03-08 17:26 - Fixed the end time in timeslots.xml
 * 2016-03-07 20:45 - Modified DTD Constraints for more strict validation
 * 2016-03-07 20:23 - Added a days.xml

@@ -4,22 +4,45 @@
 			<period start="10:30" end="12:20"></period>
 			<courseCode>ACIT4650</courseCode>
 			<courseType>lab</courseType>
-			<room>sw12-306</room>
-			<instructor>Elmasry</instructor>
+			<room>se12-306</room>
+			<instructor>Medhat Elmasry</instructor>
 		</booking>
 		<booking>
 			<period start="15:30" end="16:20"></period>
 			<courseCode>ACIT4910</courseCode>
 			<courseType>lecture</courseType>
 			<room>sw1-2005</room>
-			<instructor>Chau</instructor>
+			<instructor>Richard Chau</instructor>
 		</booking>
 		<booking>
 			<period start="16:30" end="17:20"></period>
 			<courseCode>ACIT4650</courseCode>
 			<courseType>lecture</courseType>
 			<room>se6-205</room>
-			<instructor>Elmasry</instructor>
+			<instructor>Medhat Elmasry</instructor>
+		</booking>
+	</day>
+	<day which="tue">
+		<booking>
+			<period start="8:30" end="10:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lab</courseType>
+			<room>se12-306</room>
+			<instructor>Bethany Edmunds</instructor>
+		</booking>
+		<booking>
+			<period start="12:30" end="13:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lecture</courseType>
+			<room>se6-205</room>
+			<instructor>Medhat Elmasry</instructor>
+		</booking>
+		<booking>
+			<period start="15:30" end="17:20"></period>
+			<courseCode>ACIT4620</courseCode>
+			<courseType>lecture</courseType>
+			<room>sw1-2020</room>
+			<instructor>Bethany Edmunds</instructor>
 		</booking>
 	</day>
 </days>
