@@ -18,15 +18,17 @@ class MY_Controller extends CI_Controller {
 	 * Establish view parameters & load common helpers
 	 */
 
-	function __construct() {
+	function __construct()
+	{
 		parent::__construct();
 		$this->data = array();
-		$this->data['siteTitle'] = 'ACIT 4850 - Group 05'; // our default title
+		$this->data['siteTitle'] = 'ACIT 4850 - Group 05 Timetable App'; // our default title
 		$this->errors = array();
 		$this->data['pageTitle'] = 'Welcome';   // our default page
 		// This special line of code will check if the application is running in a folder or not
 		// i.e.:  gamebot5.local will not return anything, whereas localhost/gamebot5 will return /gamebot5
 		$this->data['appRoot'] = (strlen(dirname($_SERVER['SCRIPT_NAME'])) === 1 ? "" : dirname($_SERVER['SCRIPT_NAME']));
+		$this->data['searchResult'] = "";
 
 		/**
 		 * Add in additional CSS files used by using:
@@ -40,7 +42,9 @@ class MY_Controller extends CI_Controller {
 		 * 	CDN Hotlinks by the full url (including http)
 		 */
 		// Set global styles to load on all pages
-		$this->pageStyles = array();
+		$this->pageStyles = array(
+			'https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css',
+			'welcome');
 
 		/**
 		 * Add in additional JS files used by using
@@ -52,39 +56,42 @@ class MY_Controller extends CI_Controller {
 		 * 	CDN Hotlinks by the full url (including http)
 		 */
 		// set global scripts to load on all pages
-		$this->pageScripts = array('https://code.jquery.com/jquery-2.2.0.min.js');
+		$this->pageScripts = array(
+			'https://code.jquery.com/jquery-2.2.0.min.js',
+			'https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js',
+			'welcome');
 	}
 
 	/**
 	 * Render this page
 	 */
-	function render() {
+	function render()
+	{
+		// Regex expression to check whether it's http://, https://, or just //
+		$hotlink_pattern = "/(^(http(s?):)?(\/\/){1}.*)/i";
 		// CI Parser to insert into template
 		$this->data['loadScripts'] = "";
 
 		// Check if we need to load any JavaScript files
-		if (!empty($this->pageScripts)) {
+		if (!empty($this->pageScripts))
+		{
 			// at least one value was provided to the pageScripts array
 			// Make sure only unique values are in the array
 			$this->pageScripts = array_unique($this->pageScripts);
 			$scripts = array();
-			foreach ($this->pageScripts as $js) {
+			foreach ($this->pageScripts as $js)
+			{
 				// Check if the value is a local file or a hotlink
-				if (strpos($js, "http") === false) {
-					// Did not detect http, therefore it's a local file (hopefully)
+				if (preg_match($hotlink_pattern, $js))
+				{
+					// Detected hotlink (hopefully)
+					$scripts['scripts'][]['link'] = $js;
+				} else
+				{
+					// Did not detect hotlink, therefore it's a local file (hopefully)
 					// NOTE:  We aren't checking for file existence
-					$temp['link'] = $this->data['appRoot'] . "/assets/js/" . $js . ".js";
-				} else {
-					// Detected http, attempt to validate link via PHP Validation
-					if (filter_var($js, FILTER_VALIDATE_URL)) {
-						// Link validated by PHP
-						$temp['link'] = $js;
-					} else {
-						// Invalid Link... Do nothing.
-					}
+					$scripts['scripts'][]['link'] = $this->data['appRoot'] . "/assets/js/" . $js . ".js";
 				}
-				// Add into the proper array for CI Parsing
-				$scripts['scripts'][] = $temp;
 			}
 
 			// Parse and return html string
@@ -95,25 +102,25 @@ class MY_Controller extends CI_Controller {
 		$this->data['loadStyles'] = "";
 
 		// Check if we need to load any CSS files
-		if (!empty($this->pageStyles)) {
+		if (!empty($this->pageStyles))
+		{
+			$temp = "";
 			// at least one value was provided to the pageStyles array
 			// Make sure only unique values are in the array
 			$this->pageStyles = array_unique($this->pageStyles);
 			$styles = array();
-			foreach ($this->pageStyles as $css) {
+			foreach ($this->pageStyles as $css)
+			{
 				// check if the value is a local file or a hotlink
-				if (strpos($css, "http") === false) {
-					// Did not detect http, therefore it's a local file (hopefully)
+				if (preg_match($hotlink_pattern, $css))
+				{
+					// Detected hotlink (hopefully)
+					$temp['link'] = $css;
+				} else
+				{
+					// Did not detect hotlink, therefore it's a local file (hopefully)
 					// NOTE:  We aren't checking for file existence
 					$temp['link'] = $this->data['appRoot'] . "/assets/css/" . $css . ".css";
-				} else {
-					// Detected http, attempt to validate link via PHP Validation
-					if (filter_var($css, FILTER_VALIDATE_URL)) {
-						// Link validated by PHP
-						$temp['link'] = $css;
-					} else {
-						// Invalid Link... Do nothing.
-					}
 				}
 
 				// Add into proper array for CI Parsing
@@ -128,31 +135,6 @@ class MY_Controller extends CI_Controller {
 		// finally, build the browser page!
 		$this->data['data'] = &$this->data;
 		$this->parser->parse('_template', $this->data);
-	}
-
-	//dropdowns
-	public function timeslot_dropdown() {
-		$timeslots = array();
-
-		foreach ($this->schedule->periods() as $periods) {
-			$timeslots[] = array(
-				'code' => $periods->code,
-				'period' => $periods->name
-			);
-		}
-		return $timeslots;
-	}
-
-	public function days_dropdown() {
-		$day = array();
-
-		foreach ($this->schedule->days() as $days) {
-			$day[] = array(
-				'code' => $days->code,
-				'day' => $days->name
-			);
-		}
-		return $day;
 	}
 
 }

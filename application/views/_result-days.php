@@ -1,29 +1,28 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<h1>Results by Days of the week</h1>
-<table id="daysResult">
+<h2>Showing all results from the day facet</h2>
+<table id="daysResult" class="display">
 	<thead>
 		<tr>
 			<th>Day</th>
+			<th>Period</th>
 			<th>Course Number</th>
+			<th>Course Type</th>
 			<th>Instructor</th>
 			<th>Room Number</th>
-			<th>Course type</th>
-			<th>Period</th>
 		</tr>
 	</thead>
 	<tbody>
 		{daysFacet}
 		<tr>
 			<td>{day}</td>
+			<td>{periodStart} - {periodEnd}</td>
 			<td>{courseCode}</td>
+			<td>{courseType}</td>
 			<td>{instructor}</td>
 			<td>{room}</td>
-			<td>{courseType}</td>
-			<td>{periodStart} - {periodEnd}</td>
 		</tr>
 		{/daysFacet}
 	</tbody>
 </table>
-
