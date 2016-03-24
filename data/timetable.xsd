@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		elementFormDefault="qualified">
+	
+	<!-- Common data types-->
+	<xs:complexType name="Tbookings">
+		<xs:sequence>
+		<xs:element name="period" type="Tperiod"/>
+		<xs:element name="courseCode" type="Tcode"/>
+		<xs:element name="courseType" type="Tcoursetype"/>
+		<xs:element name="room" type="Troom"/>
+		<xs:element name="instructor" type="Tinstructor"/>
+		<xs:element name="day" type="Tweekdays"/>
+		</xs:sequence>
+	</xs:complexType>
+		
+	<xs:simpleType name="Tinstructor">
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Tperiod">
+		<xs:restriction base="xs:integer">
+			<xs:pattern value="[0-2][0-9]:[0-9][0-9]"/>
+			<xs:minInclusive value="08:30" />
+			<xs:maxInclusive value="16:30" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+	<xs:simpleType name="Tcode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{4}\d{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Troom">
+		<xs:restriction base="xs:numeric">
+			<xs:pattern value="[A-Z]{2}\d{1}-\d{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Tcoursetype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="lecture" />
+			<xs:enumeration value="lab" />
+			<xs:enumeration value="tutorial" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Tweekdays">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="mon"/>
+			<xs:enumeration value="tue"/>
+			<xs:enumeration value="wed"/>
+			<xs:enumeration value="thur"/>
+			<xs:enumeration value="fri"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+<!-- specific data structure for days.xml -->
+	<xs:complexType name="days">
+		<xs:sequence>
+			<xs:element name="day" type="Tweekdays" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="day">
+		<xs:sequence>
+			<xs:element name="booking" type="Tbookings" />
+		</xs:sequence>
+		<xs:attribute name="which" type="Tweekdays"/>
+	</xs:complexType>
+	
+</xs:schema>
