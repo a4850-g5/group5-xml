@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <h2>Search Me!</h2>
 <form method="post" action="/search">
-	<label for="Timeslot">Timeslot: </label>
+	<label for="Timeslot">Time: </label>
 	<select  id="Timeslot" name="dropdown_timeslot">
 		{timeslots}
 		<option value="{code}">{period}</option>

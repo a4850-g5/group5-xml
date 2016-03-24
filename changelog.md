@@ -1,6 +1,10 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+### Changelog for Lab 09
+* 2016-03-24 16:10 - Fixed as per grading feedback - now able to display booking already in progress
+
+### Changelog for Lab 08
 * 2016-03-23 14:30 - Combined all components into one Controller, plus simple formatting.
 * 2016-03-22 17:43 - Added views, show function -> data table
 * 2016-03-22 17:00 - Added Search Function
