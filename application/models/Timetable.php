@@ -92,7 +92,10 @@ class Timetable extends CI_Model {
 
 		foreach ($this->getCourses() as $course)
 		{
-			if ($course->day == $searchDay && $course->periodStart == $searchPeriod)
+			$startTime = strtotime($course->periodStart);
+			$endTime = strtotime($course->periodEnd);
+			$searchTime = strtotime($searchPeriod);
+			if ($course->day == $searchDay && $startTime <= $searchTime && $searchTime <= $endTime)
 			{
 				$result[] = $course;
 			}
@@ -116,7 +119,10 @@ class Timetable extends CI_Model {
 
 		foreach ($this->getDays() as $day)
 		{
-			if ($day->day == $searchDay && $day->periodStart == $searchPeriod)
+			$startTime = strtotime($day->periodStart);
+			$endTime = strtotime($day->periodEnd);
+			$searchTime = strtotime($searchPeriod);
+			if ($day->day == $searchDay && $startTime <= $searchTime && $searchTime <= $endTime)
 			{
 				$result[] = $day;
 			}
@@ -141,7 +147,10 @@ class Timetable extends CI_Model {
 
 		foreach ($this->getTimeslots() as $timeslot)
 		{
-			if ($timeslot->day == $searchDay && $timeslot->periodStart == $searchPeriod)
+			$startTime = strtotime($timeslot->periodStart);
+			$endTime = strtotime($timeslot->periodEnd);
+			$searchTime = strtotime($searchPeriod);
+			if ($timeslot->day == $searchDay && $startTime <= $searchTime && $searchTime <= $endTime)
 			{
 				$result[] = $timeslot;
 			}
