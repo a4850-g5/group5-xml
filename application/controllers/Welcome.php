@@ -52,7 +52,7 @@ class Welcome extends MY_Controller {
 			// All Searches came up null - no courses starting with search parameters specified.
 			// Note that we are not checking if a booking is in progress with those parameters.
 
-			$this->data['searchResults'] = "Search results came up empty - perhaps there are no courses starting with the day and period chosen.  However, there may be a course already in progress during the day and period chosen.";
+			$this->data['searchResults'] = "Search results came up empty - there seems to be nothing happening during the day and time selected.";
 		} else
 		{
 			// at least one of the search returned a Booking object
