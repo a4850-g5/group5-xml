@@ -2,7 +2,6 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 09
-* 2016-03-24 16:40 - Added specific data structure for timeslots.xml
 * 2016-03-24 16:20 - Created timetables.xsd, and specific data structure for days.xml
 * 2016-03-24 16:10 - Fixed as per grading feedback - now able to display booking already in progress
 
