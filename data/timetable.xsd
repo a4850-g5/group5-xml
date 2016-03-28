@@ -74,4 +74,19 @@
 		<xs:attribute name="which" type="Tweekdays"/>
 	</xs:complexType>
 	
+		<!-- Specific data structure for Timeslots-->
+	<xs:complexType name="timeslots">
+		<xs:sequence>
+			<xs:element name="period" type="Tperiod" />
+		</xs:sequence>
+	</xs:complexType>
+   
+	<xs:complexType name="period">
+		<xs:sequence>
+			<xs:element name="booking" type="Tbooking" />
+		</xs:sequence>
+		<xs:attribute name="start" />
+		<xs:attribute name="end" />
+	</xs:complexType>
+	
 </xs:schema>
