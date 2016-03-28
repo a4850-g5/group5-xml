@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- Please use timetable.xml to validate against locally, as schema doesn't support entities -->
+	
+	<!-- ========== Common data types for validation ========== -->
+	
+	<!-- dayWhich values are the abbreviation for the day of week -->
+	<xs:simpleType name="TdayWhich">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="mon" />
+			<xs:enumeration value="tue" />
+			<xs:enumeration value="wed" />
+			<xs:enumeration value="thur" />
+			<xs:enumeration value="fri" />
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- time (for start and end period attributes) -->
+	<xs:simpleType name="Ttime">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-2][0-9]:[0-5][0-9]" />
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- courseCode -->
+	<xs:simpleType name="TcourseCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{4}\d{4}" />
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<!-- Course Type have to be one of the three -->
+	<xs:simpleType name="TcourseType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Lab" />
+			<xs:enumeration value="Lecture" />
+			<xs:enumeration value="Tutorial" />
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- room -->
+	<xs:simpleType name="Troom">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{2}\d{1,2}-\d{1,4}" />
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- instructor -->
+	<xs:simpleType name="Tinstructor">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<!-- ========== Structural Elements ========== -->
+	
+	<!-- The root timetable element may contain one of each facet -->
+	<xs:element name="timetable">
+		<xs:complexType>
+			<xs:all minOccurs="0" maxOccurs="1">
+				<xs:element name="courses" type="Tcourses"/>
+				<xs:element name="days" type="Tdays"/>
+				<xs:element name="timeslots" type="Ttimeslots"/>
+			</xs:all> 
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- The Individual Facet Elements -->
+	
+	<!-- A courses element contains a bunch of course elements -->
+	<xs:complexType name="Tcourses">
+		<xs:sequence>
+			<xs:element name="course" type="Tcourse" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- A course element contains an attribute, and a number of bookings -->
+	<xs:complexType name="Tcourse" >
+		<xs:sequence>
+			<xs:element name="booking" type="Tbooking" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="courseCode" type="TcourseCode" use="required"/>
+	</xs:complexType>
+	
+	
+	<!-- A days element contains a bunch of day elements -->
+	<xs:complexType name="Tdays">
+		<xs:sequence>
+			<xs:element name="day" type="Tday" maxOccurs="5" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- A day element contains an attribute, and a number of bookings -->
+	<xs:complexType name="Tday">
+		<xs:sequence>
+			<xs:element name="booking" type="Tbooking" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="which" type="TdayWhich" use="required" />
+	</xs:complexType>
+	
+	<!-- A timeslots element contains a bunch of timeslot elements -->
+	<xs:complexType name="Ttimeslots">
+		<xs:sequence>
+			<xs:element name="period" type="Tperiod" maxOccurs="9" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- A timeslot element contains an attribute, and a number of bookings -->
+	<xs:complexType name="Tperiod">
+		<xs:sequence>
+			<xs:element name="booking" type="Tbooking" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="start" type="Ttime" use="required" />
+		<xs:attribute name="end" type="Ttime" use="required" />
+	</xs:complexType>
+	
+	<!-- The booking type contains the element values specific to each booking -->
+	<xs:complexType name="Tbooking">
+		<xs:sequence>
+			<xs:element name="day" type="Tday" minOccurs="0" maxOccurs="1" />
+			<xs:element name="period" type="Tperiod" minOccurs="0" maxOccurs="1" />
+			<xs:element name="courseCode" type="TcourseCode" minOccurs="0" maxOccurs="1" />
+			<xs:element name="courseType" type="TcourseType" minOccurs="1" maxOccurs="1" />
+			<xs:element name="room" type="Troom" minOccurs="1" maxOccurs="1" />
+			<xs:element name="instructor" type="Tinstructor" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
