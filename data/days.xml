@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-
-<days xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="timetable.xsd">
+<days>
 		<day which="mon">
 			<booking>
 				<period start="10:30" end="12:20"></period>

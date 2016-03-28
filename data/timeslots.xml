@@ -1,25 +1,25 @@
 <timeslots>
-		<period start="10:30" end="12:20">
-			<booking>
-				<day which= "mon" > </day>
-				<courseCode>ACIT4650</courseCode>
-				<courseType>Lab</courseType>
-				<room>SE12-306</room>
-				<instructor>Medhat Elmasry</instructor>
-			</booking>
-			<booking>
-				<day which= "thur" > </day>
-				<courseCode>ACIT4910</courseCode>
-				<courseType>Lab</courseType>
-				<room>SE12-306</room>
-				<instructor>Richard Chau</instructor>
-			</booking>
-			<booking>
-				<day which= "fri" > </day>
-				<courseCode>ACIT4770</courseCode>
-				<courseType>Tutorial</courseType>
-				<room>SE12-306</room>
-				<instructor>Trevor Lord</instructor>
-			</booking>
-		</period>
-	</timeslots>
+	<period start="10:30" end="12:20">
+		<booking>
+			<day which= "mon" > </day>
+			<courseCode>ACIT4650</courseCode>
+			<courseType>Lab</courseType>
+			<room>SE12-306</room>
+			<instructor>Medhat Elmasry</instructor>
+		</booking>
+		<booking>
+			<day which= "thur" > </day>
+			<courseCode>ACIT4910</courseCode>
+			<courseType>Lab</courseType>
+			<room>SE12-306</room>
+			<instructor>Richard Chau</instructor>
+		</booking>
+		<booking>
+			<day which= "fri" > </day>
+			<courseCode>ACIT4770</courseCode>
+			<courseType>Tutorial</courseType>
+			<room>SE12-306</room>
+			<instructor>Trevor Lord</instructor>
+		</booking>
+	</period>
+</timeslots>
