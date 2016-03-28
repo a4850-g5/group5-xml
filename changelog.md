@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 09
+* 2016-03-28 14:15 - Changed courses.xml for schema validation in CI/php.
 * 2016-03-28 13:22 - Changed the .xml files so they validate against .xsd
 * 2016-03-28 13:00 - Specific data structure for Timeslots
 * 2016-03-28 00:55 - Added timetable_ken.xsd, a complete xsl schema for all facets
