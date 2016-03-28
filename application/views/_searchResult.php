@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <table id="searchResult" class="display">
 	<thead>
 		<tr>

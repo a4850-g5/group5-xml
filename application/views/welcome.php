@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <h1>Welcome to {siteTitle}!</h1>
 
 <div id="body">
+	{schemaValidateResults}
 	{coursesTable}
 	{daysTable}
 	{timeslotsTable}
