@@ -8,6 +8,8 @@ class Welcome extends MY_Controller {
 	{
 		$this->data['pageTitle'] = "Home - Welcome";
 
+		$this->data['schemaValidateResults'] = $this->timetable->schemaValidate();
+
 		$this->data['coursesTable'] = $this->getBookings("courses");
 		$this->data['daysTable'] = $this->getBookings("days");
 		$this->data['timeslotsTable'] = $this->getBookings("timeslots");
@@ -24,6 +26,8 @@ class Welcome extends MY_Controller {
 	public function search()
 	{
 		$this->data['pageTitle'] = "Search Results";
+
+		$this->data['schemaValidateResults'] = $this->timetable->schemaValidate();
 
 		$this->data['coursesTable'] = $this->getBookings("courses");
 		$this->data['daysTable'] = $this->getBookings("days");
