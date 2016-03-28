@@ -2,6 +2,14 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 09
+* 2016-03-28 16:40 - Added XML Schema Server Side Validation
+* 2016-03-28 15:00 - replaced timetable.xsd with timetable_ken.xsd
+* 2016-03-28 14:15 - Changed courses.xml for schema validation in CI/php.
+* 2016-03-28 13:22 - Changed the .xml files so they validate against .xsd
+* 2016-03-28 13:00 - Specific data structure for Timeslots
+* 2016-03-28 00:55 - Added timetable_ken.xsd, a complete xsl schema for all facets
+* 2016-03-25 23:45 - Added timetable.xml - which is the master.xml file with no entity.
+* 2016-03-24 16:20 - Created timetables.xsd, and specific data structure for days.xml
 * 2016-03-24 16:10 - Fixed as per grading feedback - now able to display booking already in progress
 
 ### Changelog for Lab 08
@@ -19,6 +27,8 @@
 * 2016-03-21 22:10 - Added Timetable CI Model
 * 2016-03-21 19:25 - Added Schedule CI Model, schedule xml for dropdown
 * 2016-03-21 19:00 - Initial CodeIgniter Template webpage render system
+
+### Changelog for Lab 07
 * 2016-03-21 18:10 - Adjusted timeslots.xml, instructor full name
 * 2016-03-12 21:31 - Adjusted days.xml, instructor full name
 * 2016-03-10 18:12 - Added timetable.php

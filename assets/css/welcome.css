@@ -3,3 +3,17 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.schema {
+	border-style: double;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.schema_fail {
+	background-color: lightcoral;
+}
+
+.schema_pass {
+	background-color: lightgreen;
+}

@@ -165,6 +165,35 @@ class Timetable extends CI_Model {
 		return $result;
 	}
 
+	/**
+	 *  Server-side xml schema validation
+	 */
+	public function schemaValidate()
+	{
+		$doc = new DOMDocument();
+		$doc->load(DATAPATH . 'timetable.xml');
+		$schema = DATAPATH . 'timetable.xsd';
+
+		$results = array();
+
+		libxml_use_internal_errors(true);
+		if ($doc->schemaValidate($schema))
+		{
+			$results['resultCSS'] = 'schema_pass';
+			$results['schemaValidationResults'][]['message'] = "Validated against schema (timetable.xsd) successfully.";
+		} else
+		{
+			$results['resultCSS'] = 'schema_fail';
+			$results[] = "<b>Whoopsie...</b><br />";
+			foreach (libxml_get_errors() as $error)
+			{
+				$results['schemaValidationResults'][]['message'] = $error->message;
+			}
+		}
+		libxml_clear_errors();
+		return $this->parser->parse('_xmlSchemaValidation', $results, true);
+	}
+
 }
 
 class Booking extends CI_Model {
