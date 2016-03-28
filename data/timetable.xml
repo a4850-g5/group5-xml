@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<timetable>
+<timetable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="timetable.xsd">
 	<courses>
 		<course courseCode="ACIT4620">
 			<booking>
 				<day which="tue" />
 				<period start="08:30" end="10:20" />
 				<courseType>Lab</courseType>
-				<room>SE12 - 306</room>
+				<room>SE12-306</room>
 				<instructor>Bethany Edmunds</instructor>
 			</booking>
 			<booking>
 				<day which="tue" />
 				<period start="15:30" end="17:20" />
 				<courseType>Lecture</courseType>
-				<room>SW1 - 2020</room>
+				<room>SW1-2020</room>
 				<instructor>Bethany Edmunds</instructor>
 			</booking>
 		</course>
@@ -23,21 +23,21 @@
 				<day which="mon" />
 				<period start="10:30" end="12:20" />
 				<courseType>Lab</courseType>
-				<room>SE12 - 306</room>
+				<room>SE12-306</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 			<booking>
 				<day which="mon" />
 				<period start="16:30" end="17:20" />
 				<courseType>Lecture</courseType>
-				<room>SE6 - 205</room>
+				<room>SE6-205</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 			<booking>
 				<day which="tue" />
 				<period start="12:30" end="14:20" />
 				<courseType>Lecture</courseType>
-				<room>SE6 - 205</room>
+				<room>SE6-205</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 		</course>
@@ -46,14 +46,14 @@
 				<day which="fri" />
 				<period start="08:30" end="10:20" />
 				<courseType>Lecture</courseType>
-				<room>SW9 - 206</room>
+				<room>SW9-206</room>
 				<instructor>Steve Fabiszewski</instructor>
 			</booking>
 			<booking>
 				<day which="fri" />
 				<period start="13:30" end="15:20" />
 				<courseType>Lab</courseType>
-				<room>SE12 - 306</room>
+				<room>SE12-306</room>
 				<instructor>Steve Fabiszewski</instructor>
 			</booking>
 		</course>
@@ -62,7 +62,7 @@
 				<day which="fri" />
 				<period start="10:30" end="12:20" />
 				<courseType>Tutorial</courseType>
-				<room>SE12 - 306</room>
+				<room>SE12-306</room>
 				<instructor>Trevor Lord</instructor>
 			</booking>
 		</course>
@@ -71,14 +71,14 @@
 				<day which="wed" />
 				<period start="12:30" end="14:20" />
 				<courseType>Lecture</courseType>
-				<room>SE6 - 207</room>
+				<room>SE6-207</room>
 				<instructor>James Perry</instructor>
 			</booking>
 			<booking>
 				<day which="thur" />
 				<period start="13:30" end="15:20" />
 				<courseType>Lab</courseType>
-				<room>SE12 - 308</room>
+				<room>SE12-308</room>
 				<instructor>James Perry</instructor>
 			</booking>
 		</course>
@@ -87,21 +87,21 @@
 				<day which="mon" />
 				<period start="15:30" end="16:20" />
 				<courseType>Lecture</courseType>
-				<room>SW1 - 2005</room>
+				<room>SW1-2005</room>
 				<instructor>Richard Chau</instructor>
 			</booking>
 			<booking>
 				<day which="thur" />
 				<period start="09:30" end="10:20" />
 				<courseType>Lecture</courseType>
-				<room>SW1 - 1205</room>
+				<room>SW1-1205</room>
 				<instructor>Richard Chau</instructor>
 			</booking>
 			<booking>
 				<day which="thur" />
 				<period start="10:30" end="12:20" />
 				<courseType>Lab</courseType>
-				<room>SE12 - 306</room>
+				<room>SE12-306</room>
 				<instructor>Richard Chau</instructor>
 			</booking>
 		</course>
@@ -111,45 +111,45 @@
 			<booking>
 				<period start="10:30" end="12:20"></period>
 				<courseCode>ACIT4650</courseCode>
-				<courseType>lab</courseType>
-				<room>se12-306</room>
+				<courseType>Lab</courseType>
+				<room>SE12-306</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 			<booking>
 				<period start="15:30" end="16:20"></period>
 				<courseCode>ACIT4910</courseCode>
-				<courseType>lecture</courseType>
-				<room>sw1-2005</room>
+				<courseType>Lecture</courseType>
+				<room>SW1-2005</room>
 				<instructor>Richard Chau</instructor>
 			</booking>
 			<booking>
 				<period start="16:30" end="17:20"></period>
 				<courseCode>ACIT4650</courseCode>
-				<courseType>lecture</courseType>
-				<room>se6-205</room>
+				<courseType>Lecture</courseType>
+				<room>SE6-205</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 		</day>
 		<day which="tue">
 			<booking>
-				<period start="8:30" end="10:20"></period>
+				<period start="08:30" end="10:20"></period>
 				<courseCode>ACIT4620</courseCode>
-				<courseType>lab</courseType>
-				<room>se12-306</room>
+				<courseType>Lab</courseType>
+				<room>SE12-306</room>
 				<instructor>Bethany Edmunds</instructor>
 			</booking>
 			<booking>
 				<period start="12:30" end="13:20"></period>
 				<courseCode>ACIT4620</courseCode>
-				<courseType>lecture</courseType>
-				<room>se6-205</room>
+				<courseType>Lecture</courseType>
+				<room>SE6-205</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 			<booking>
 				<period start="15:30" end="17:20"></period>
 				<courseCode>ACIT4620</courseCode>
-				<courseType>lecture</courseType>
-				<room>sw1-2020</room>
+				<courseType>Lecture</courseType>
+				<room>SW1-2020</room>
 				<instructor>Bethany Edmunds</instructor>
 			</booking>
 		</day>
@@ -159,21 +159,21 @@
 			<booking>
 				<day which= "mon" > </day>
 				<courseCode>ACIT4650</courseCode>
-				<courseType>lab</courseType>
+				<courseType>Lab</courseType>
 				<room>SE12-306</room>
 				<instructor>Medhat Elmasry</instructor>
 			</booking>
 			<booking>
 				<day which= "thur" > </day>
 				<courseCode>ACIT4910</courseCode>
-				<courseType>lab</courseType>
+				<courseType>Lab</courseType>
 				<room>SE12-306</room>
 				<instructor>Richard Chau</instructor>
 			</booking>
 			<booking>
 				<day which= "fri" > </day>
 				<courseCode>ACIT4770</courseCode>
-				<courseType>tutorial</courseType>
+				<courseType>Tutorial</courseType>
 				<room>SE12-306</room>
 				<instructor>Trevor Lord</instructor>
 			</booking>
