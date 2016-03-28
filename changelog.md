@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 09
+* 2016-03-28 13:00 - Specific data structure for Timeslots
 * 2016-03-28 00:55 - Added timetable_ken.xsd, a complete xsl schema for all facets
 * 2016-03-25 23:45 - Added timetable.xml - which is the master.xml file with no entity.
 * 2016-03-24 16:20 - Created timetables.xsd, and specific data structure for days.xml
