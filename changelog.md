@@ -1,6 +1,9 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+### Changelog for Lab 10
+* 2016-03-31 12:45 - Just the changelog was modified with a header section for Lab 10
+
 ### Changelog for Lab 09
 * 2016-03-28 16:40 - Added XML Schema Server Side Validation
 * 2016-03-28 15:00 - replaced timetable.xsd with timetable_ken.xsd
