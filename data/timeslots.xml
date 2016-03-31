@@ -1,3 +1,4 @@
+<?xml-stylesheet type='text/xsl' href='timetable_2.xsl'?>
 <timeslots>
 	<period start="10:30" end="12:20">
 		<booking>
