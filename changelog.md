@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 10
+* 2016-03-31 16:06 - Created and worked on timetable_1. xsl for days facet
 * 2016-03-31 12:45 - Just the changelog was modified with a header section for Lab 10
 
 ### Changelog for Lab 09
