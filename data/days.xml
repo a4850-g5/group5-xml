@@ -1,3 +1,5 @@
+<?xml-stylesheet type='text/xsl' href='days.xsl'?>
+
 <days>
 	<day which="mon">
 		<booking>
