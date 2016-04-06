@@ -1,4 +1,4 @@
-<?xml-stylesheet type='text/xsl' href='timetable_1.xsl'?>
+<?xml-stylesheet type='text/xsl' href='days.xsl'?>
 
 <days>
 	<day which="mon">
