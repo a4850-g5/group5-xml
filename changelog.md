@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 10
+* 2016-04-05 21:45 - Start-Time centric view for course.xml
 * 2016-03-31 12:45 - Just the changelog was modified with a header section for Lab 10
 
 ### Changelog for Lab 09
