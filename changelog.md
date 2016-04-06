@@ -1,6 +1,16 @@
 # Project Changelog
 >Template: * YYYY-MM-DD HH:MM - Comment
 
+### Changelog for Lab 10
+* 2016-04-05 22:40 - XSL Housekeeping stuff
+* 2016-04-05 22:35 - Day centric view for course.xml
+* 2016-04-05 21:45 - Start-Time centric view for course.xml
+* 2016-04-05 17:10 - Completed timeslot spreasheet.
+* 2016-04-05 15:10 - Created the day centric timetable
+* 2016-03-31 16:06 - Created and worked on timetable_1. xsl for days facet
+* 2016-03-31 16:00 - Created timetable_2, displayed period times and headers. 
+* 2016-03-31 12:45 - Just the changelog was modified with a header section for Lab 10
+
 ### Changelog for Lab 09
 * 2016-03-28 16:40 - Added XML Schema Server Side Validation
 * 2016-03-28 15:00 - replaced timetable.xsd with timetable_ken.xsd

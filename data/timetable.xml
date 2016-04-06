@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<timetable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="timetable.xsd">
+<timetable>
 	<courses>
 		<course courseCode="ACIT4620">
 			<booking>
