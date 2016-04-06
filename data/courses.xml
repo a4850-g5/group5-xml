@@ -35,7 +35,7 @@
 		</booking>
 		<booking>
 			<day which="tue" />
-			<period start="12:30" end="14:20" />
+			<period start="12:30" end="13:20" />
 			<courseType>Lecture</courseType>
 			<room>SE6-205</room>
 			<instructor>Medhat Elmasry</instructor>

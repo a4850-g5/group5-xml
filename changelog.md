@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 10
+* 2016-04-06 14:00 - Fixed course facet info for a course, which brought about a bug in the xsl, which got fixed as well.
 * 2016-04-05 22:40 - XSL Housekeeping stuff
 * 2016-04-05 22:35 - Day centric view for course.xml
 * 2016-04-05 21:45 - Start-Time centric view for course.xml
