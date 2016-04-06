@@ -1,7 +1,7 @@
 <?xml-stylesheet type='text/xsl' href='timetable_1.xsl'?>
 
 <days>
-	<day which="Mon">
+	<day which="mon">
 		<booking>
 			<period start="10:30" end="12:20"></period>
 			<courseCode>ACIT4650</courseCode>
@@ -24,7 +24,7 @@
 			<instructor>Medhat Elmasry</instructor>
 		</booking>
 	</day>
-	<day which="Tue">
+	<day which="tue">
 		<booking>
 			<period start="08:30" end="10:20"></period>
 			<courseCode>ACIT4620</courseCode>
