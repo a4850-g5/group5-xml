@@ -4,6 +4,7 @@
 ### Changelog for Lab 10
 * 2016-04-05 17:10 - Completed timeslot spreasheet.
 * 2016-03-31 16:00 - Created timetable_2, displayed period times and headers. 
+* 2016-04-05 21:45 - Start-Time centric view for course.xml
 * 2016-03-31 12:45 - Just the changelog was modified with a header section for Lab 10
 
 ### Changelog for Lab 09
