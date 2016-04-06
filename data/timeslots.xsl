@@ -29,8 +29,8 @@
 		</html>
 	</xsl:template>
 	
-		<!--Day's header-->	
-		<xsl:template name="headings">
+	<!--Day's header-->	
+	<xsl:template name="headings">
 		<tr>
 			<th>Time</th>
 			<th>Monday</th>
@@ -68,7 +68,7 @@
 				</xsl:for-each>
 			</td>
 
-			<!--Column to call Tuesday courses in the timeslot-->			
+			<!--Column to call Tuesday courses in the timeslot-->
 			<td>
 				<xsl:for-each select="booking">
 					<xsl:if test="day/@which='tues'">
@@ -86,7 +86,7 @@
 			</td>
 			
 
-			<!--Column to call Wednesday courses in the timeslot-->			
+			<!--Column to call Wednesday courses in the timeslot-->
 			<td>
 				<xsl:for-each select="booking">
 					<xsl:if test="day/@which='wed'">
@@ -121,7 +121,7 @@
 				</xsl:for-each>
 			</td>
 
-			<!--Column to call Friday courses in the timeslot-->			
+			<!--Column to call Friday courses in the timeslot-->
 			<td>
 				<xsl:for-each select="booking">
 					<xsl:if test="day/@which='fri'">

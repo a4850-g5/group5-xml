@@ -199,9 +199,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:if test="not(key('dayStart', concat($weekday, '+', $previousHour)))">
-					<td>
-						<xsl:value-of select="$startTime" />
-					</td>
+					<td></td>
 				</xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>
