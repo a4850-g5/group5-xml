@@ -2,6 +2,7 @@
 >Template: * YYYY-MM-DD HH:MM - Comment
 
 ### Changelog for Lab 10
+* 2016-04-05 22:35 - Day centric view for course.xml
 * 2016-04-05 21:45 - Start-Time centric view for course.xml
 * 2016-04-05 17:10 - Completed timeslot spreasheet.
 * 2016-04-05 15:10 - Created the day centric timetable
